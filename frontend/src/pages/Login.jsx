@@ -12,6 +12,7 @@ import { AppContext } from '../context/AppContext';
 const Login = () => {
   const navigate = useNavigate();
   // const {setUser} = useContext(AppContext)  ;
+  const API_URL = import.meta.env.VITE_BASE_URL;
   const { isAuth, setISAuth, user, setUser } = useContext(AppContext)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -26,7 +27,7 @@ const Login = () => {
     }
     console.log(userData)
     try {
-      const response = await axios.post('http://localhost:5000/login', userData);
+      const response = await axios.post(`${API_URL}/login`, userData);
       console.log("response after login", response)
       setISAuth(true)
       localStorage.setItem("user", JSON.stringify(response.data.user))

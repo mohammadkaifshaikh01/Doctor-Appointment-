@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Signup = () => {
   const navigate = useNavigate();
+  const API_URL = import.meta.env.VITE_BASE_URL;
   const { updateUser } = useContext(AppContext);
 
   const [name, setName] = useState("");
@@ -24,7 +25,7 @@ const Signup = () => {
     const userData = { username: name, email, password };
   
     try {
-      const response = await axios.post("http://localhost:5000/register", userData, {
+      const response = await axios.post(`${API_URL}/register`, userData, {
         headers: { "Content-Type": "application/json" },
       });
   
@@ -35,7 +36,7 @@ const Signup = () => {
      
       localStorage.setItem("token", response.data.token);
   
-      setTimeout(() => navigate("/"), 2000);
+      setTimeout(() => navigate("/login"), 2000);
     } catch (error) {
       console.error("Axios Error:", error); // Log entire error object
   
