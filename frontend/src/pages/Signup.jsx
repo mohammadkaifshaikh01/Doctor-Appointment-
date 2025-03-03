@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Signup = () => {
   const navigate = useNavigate();
-  const API_URL = import.meta.env.VITE_BASE_URL;
+  // const API_URL = import.meta.env.VITE_BASE_URL;
   const { updateUser } = useContext(AppContext);
 
   const [name, setName] = useState("");
@@ -25,8 +25,8 @@ const Signup = () => {
     const userData = { username: name, email, password };
   
     try {
-      const response = await axios.post(`${API_URL}/register`, userData, {
-        headers: { "Content-Type": "application/json" },
+      const response = await axios.post("https://doctor-appointment-fdtx.onrender.com/register", userData, {
+        // headers: { "Content-Type": "application/json" },
       });
   
       console.log("Response Data:", response.data); 
@@ -38,7 +38,7 @@ const Signup = () => {
   
       setTimeout(() => navigate("/login"), 2000);
     } catch (error) {
-      console.error("Axios Error:", error); // Log entire error object
+      console.error("Axios Error:", error); 
   
      
     }
