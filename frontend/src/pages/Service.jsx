@@ -6,7 +6,7 @@ const Form = () => {
    const navigate = useNavigate()
   return (
     <StyledWrapper>
-      <div className="modal">
+      <div className="modal1">
         <form className="form">
           <div className="payment--options">
             <button name="paypal" type="button">

@@ -5,7 +5,7 @@ export default function ContactPage() {
     <div className="min-h-screen ">
       {/* Hero Section */}
       <section className=" text-black py-16">
-        <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center gap-8">
+        <div className=" mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-blue-600">Revolutionizing Healthcare Access</h1>
             <p className="text-lg md:text-xl mb-6">

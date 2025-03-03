@@ -10,7 +10,7 @@ const AppointmentConfirmation = () => {
   };
 
   return (
-    <div className="container">
+    <div className="payment">
       <h1 className="header">Appointment Booked Successfully!</h1>
       <div className="icon">✅</div>
       <p className="message">Your appointment has been confirmed. We look forward to seeing you!</p>

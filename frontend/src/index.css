@@ -13,9 +13,9 @@
 .grid{
    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
-.container {
+.payment {
    font-family: Arial, sans-serif;
-   max-width: 400px;
+   max-width: 440px;
    margin: 0 auto;
    padding: 20px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -85,8 +85,8 @@
    border: 1px solid #4caf50;
  }
  
- /* From Uiverse.io by zanina-yassine */ 
-.modal {
+  
+.modal1 {
   width: fit-content;
   height: fit-content;
   background: #FFFFFF;

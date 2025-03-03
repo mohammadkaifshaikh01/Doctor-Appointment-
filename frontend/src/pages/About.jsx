@@ -1,10 +1,10 @@
 import { assets } from "../assets/assets";
 export default function AboutPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full">
       {/* Hero Section */}
       <section className="bg-gradient-to-r  text-black py-16">
-        <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center gap-8">
+        <div className="mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-blue-500">Online appointment scheduling for patients</h1>
             <p className="text-lg md:text-xl mb-6">
