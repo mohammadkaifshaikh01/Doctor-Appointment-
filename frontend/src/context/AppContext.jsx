@@ -4,22 +4,24 @@ import { doctors } from "../assets/assets";
 export const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
- const [isAuth , setISAuth] = useState(localStorage.getItem("token") ? true : false)
- const [user , setUser] = useState(localStorage.getItem("user"))
- const [token, setToken] = useState(localStorage.getItem("token"))
+  const [isAuth, setISAuth] = useState(
+    localStorage.getItem("token") ? true : false
+  );
+  const [user, setUser] = useState(localStorage.getItem("user"));
+  const [token, setToken] = useState(localStorage.getItem("token"));
   const currencySymbol = "$";
 
-  console.log("User from Context and localStorage", user)
-  
+  console.log("User from Context and localStorage", user);
+
   const value = {
     doctors,
     currencySymbol,
     isAuth,
     setISAuth,
-    token, setToken,
-    user , setUser
-    
-   
+    token,
+    setToken,
+    user,
+    setUser,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

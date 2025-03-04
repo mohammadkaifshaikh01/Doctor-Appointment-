@@ -6,7 +6,6 @@ import contact_image from './contact_image.png'
 import about_image from './about_image.png'
 import doc18 from "./doc18.png"
 import logo_doc from './logo_doc.svg'
-// import logo from "./logo.svg"
 import dropdown_icon from './dropdown_icon.svg'
 import menu_icon from './menu_icon.svg'
 import cross_icon from './cross_icon.png'

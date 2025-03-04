@@ -81,7 +81,7 @@ const Form = () => {
               </div>
             </div>
           </div>
-          <button className="purchase--btn" onClick={()=>navigate("/BookingConfirm")}>Checkout</button>
+          <button className="purchase--btn" onClick={()=>navigate("/bookingConfirm")}>Checkout</button>
         </form>
       </div>
     </StyledWrapper>

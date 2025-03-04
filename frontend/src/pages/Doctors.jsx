@@ -5,7 +5,6 @@ import { AppContext } from "../context/AppContext";
 
 const Doctors = () => {
   const { speciality } = useParams();
-  // console.log("Speciality from URL:", speciality); // Debugging
   const { doctors } = useContext(AppContext);
   const [filterDoc, setFilterDoc] = useState([]);
   const navigate = useNavigate();
@@ -18,8 +17,7 @@ const Doctors = () => {
   };
 
   useEffect(() => {
-    // console.log("Current Speciality:", speciality);
-    // console.log("All Doctors:", doctors);
+  
   
     applyFilter();
   }, [doctors, speciality]);
